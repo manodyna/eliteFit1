@@ -56,6 +56,10 @@ app.get("/slots", (req, res) => {
     res.sendFile(__dirname + "/slots.html")
 })
 
+app.get("/fit", (req, res) => {
+    res.sendFile(__dirname + "/fit-dash.html")
+})
+
 app.post("/bmi.html", function (req, res) {
     console.log("post initiated");
     var Weight = Number(req.body.weight);
