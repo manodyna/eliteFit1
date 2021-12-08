@@ -118,7 +118,7 @@ app.get("/fit-dash", async (req, res) => {
         "http://localhost:3000/fit-dash"
     )
     const tokens = await oauth2Client.getToken(code);
-    res.send("HELLO");
+
 
     let stepArray = [];
 
@@ -144,16 +144,20 @@ app.get("/fit-dash", async (req, res) => {
         });
 
         stepArray = result.data.bucket;
+        res.send(stepArray);
     } catch (e) {
-        console.log(e);
+        // console.log(e);
     }
+
+    var step = [];
 
     try {
         for (const dataSet of stepArray) {
             for (const points of dataSet.dataset) {
                 for (const steps of points.point) {
                     // this console logs the step count
-                    console.log(steps.value);
+                    res.send(steps.value)
+                    steps.append(steps.value)
                 }
             }
         }
