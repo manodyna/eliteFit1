@@ -4,24 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" author="manodyna">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ELTE FITNESS-bmi calculator</title>
+    <style>
+        
+      body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('bg.jpg');
+      }
+      
+      .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+      }
+      
+      .left img {
+        width: 136px;
+        filter: invert(100%);
+      }
+      
+      .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+      }
+      
+      .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+      }
+      
+      .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+      }
+      
+      .navbar {
+        display: inline-block;
+      }
+      
+      .navbar li {
+        display: inline-block;
+        font-size: 25px;
+      }
+      
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+      
+      }
+      
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+      
+      }
+      
+      .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      
+      .btn:hover {
+        background-color: rgb(31, 30, 30);
+      }
+      
+      .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+      }
+      
+      .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+      }
+      
+      .container h1 {
+        text-align: center;
+      }
+      
+      .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+      }
+          </style>
 </head>
 <body>
+  <header class="header">
+    <!-- Left box for logo -->
+    <div class="left">
+        <img src="img/gym.png" alt="">
+        <div>Elite Fitness</div>
+    </div>
+    <!-- Mid box for navbar -->
     <div class="mid">
-        <div class="mid">
-          <ul class="navbar">
-              <li><a href="/" class="active">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/bmi">BMI Calculator</a></li>
-              <li><a href="/courses">courses </a></li>
-              <li><a href="/slots">Book a slot</a></li>
-          </ul>
-      </div>
+        <ul class="navbar">
+            <li><a href="/" >Home</a></li>
+            <li><a href="/slots">slot</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/bmi" class="active">Fitness Calculator</a></li>
+            <li><a href="/courses">courses </a></li>
+            <li><a href="#">fit-dash</a></li>
+        </ul>
+    </div>
+
+    <!-- Right box for buttons -->
+    <div class="right">
+      <button class="btn" onclick="myFunction1()">Call Us Now</button>
+      <button class="btn" onclick="myFunction2()">Email Us</button>
+  </div>
+  <script>
+      function myFunction1(){
+              window.alert("Contact at:-1234567891");
+      }
+      function myFunction2(){
+              window.alert("email us at:-mayankagrawal008@gmail.com");
+      }
+  </script>
+</header>
       </div>
 
     <h1>BMI calculator</h1>
     <form action="bmi.html" method="post">
-        <input type="text" name="weight" placeholder="weight in kgs">
+        <input type="text"  name="weight" placeholder="weight in kgs">
         <input type="text" name="height" placeholder="height in metres">
     </form>
 </body>

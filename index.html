@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <title>Elite Fitness-endurance course</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Elite Fitness-home page</title>
     <style>
         
         body {
@@ -121,8 +121,8 @@
         }
             </style>
 </head>
-<!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet"> -->
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
 
 
 <body>
@@ -135,8 +135,8 @@
         <!-- Mid box for navbar -->
         <div class="mid">
             <ul class="navbar">
-                <li><a href="/" >Home</a></li>
-                <li><a href="/slots">slot</a></li>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/slot">slot</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/bmi">Fitness Calculator</a></li>
                 <li><a href="/courses">courses </a></li>
@@ -158,16 +158,34 @@
             }
         </script>
     </header>
-
-    <h1 style="margin-left: 40px;">endurance course</h1>
-    <p style="margin-left: 40px;">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima temporibus enim illum, voluptate ipsum ipsa illo rem ad magni, dolorem 
-      alias saepe laboriosam quasi, facilis totam necessitatibus? Veritatis, sint dolores? Lorem, ipsum dolor sit amet consectetur adipisicing 
-      elit. Laborum aspernatur, maxime assumenda, mollitia inventore totam et modi quas architecto velit cumque provident tempora rem nisi ut 
-      aliquid iste minima. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore eum odit reiciendis facere sed, quae suscipit 
-      quidem voluptate tempore consequuntur iste laudantium eaque cumque deserunt, aliquam officiis modi ducimus adipisci.
-    </p>
-    <a href="/slots"><button class="btn" style="margin-left: 650px;">book a slot </button></a>
+    <div class="container">
+        <h1>sign up</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="create password">
+            </div>
+            <button class="btn">Submit</button>
+            <a href="/courses"><button class="btn">courses</button></a>
+        </form>
+    </div>
 </body>
 
 </html>
