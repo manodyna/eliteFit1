@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Elite Fitness</title>
     <style>
         
@@ -135,11 +135,11 @@
         <!-- Mid box for navbar -->
         <div class="mid">
             <ul class="navbar">
-                <li><a href="/" >Home</a></li>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/slot">slot</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/slots">slot</a></li>
                 <li><a href="/bmi">Fitness Calculator</a></li>
-                <li><a href="/courses" class="active">courses </a></li>
+                <li><a href="/courses">courses </a></li>
                 <li><a href="#">fit-dash</a></li>
             </ul>
         </div>
@@ -158,17 +158,34 @@
             }
         </script>
     </header>
-    <p style="margin: 20px;">
-    <div>
-
-      <a href="/strengthning"><img src="https://media.istockphoto.com/vectors/weightlifting-woman-lifting-big-barbell-isolated-vector-silhouette-vector-id1167946015?k=20&amp;m=1167946015&amp;s=612x612&amp;w=0&amp;h=yq3RVdr0EXtz3zX-BaQJtd8l5sIGoU8qvlJAHQ-hvEU=" height="400px" width="20%" alt="" style="margin-left: 200px;margin-right: 75px;"></a>  
-      <a href="/endurance"><img src="https://imgk.timesnownews.com/story/Dream_about_running.jpg?tr=w-1200,h-900" height="400px" width="20%" alt="" style="margin-right: 75px;"></a>
-      <a href="/weightloss"><img src="https://e7.pngegg.com/pngimages/863/946/png-clipart-obesity-adipose-tissue-health-overweight-fat-health-weight-loss-silhouette-thumbnail.png" height="400px" width="20%" alt=""></a>
+    <div class="container">
+        <h1>sign up</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="create password">
+            </div>
+            <button class="btn">Submit</button>
+            <a href="/courses"><button class="btn">courses</button></a>
+        </form>
     </div>
-    <a href="/strengthning"><div style="display: inline;margin-left: 230px;"><button class="btn">strengthning course</button></div></a>
-    <a href="/strengthning"><div style="display: inline;margin-left:165px"><button class="btn">endurance course </button> </div></a>
-    <a href="/weightloss"><div style="display: inline;margin-left:165px"><button class="btn">weight loss course </button></div></a>
-    </p>
 </body>
 
 </html>
